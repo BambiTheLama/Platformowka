@@ -70,20 +70,32 @@ bool room::colision(int x,int y)
 
 void room::nowe(int x, int y)
 {
+	if (x < 0)
+		return;
+	if (y < 0)
+		return;
 	if (x % 32 == 0)
 		x = x / 32;
 	else
 		x = x / 32;
+	if (x > xr-1)
+		return;
 	if (y % 32 == 0)
 		y = y / 32;
 	else
 		y = y / 32;
+	if (y > yr-1)
+		return;
 	if (t[y][x] == 0)
 		t[y][x] = 1;
 }
 
 void room::usun(int x, int y)
 {
+	if (x < 0)
+		return;
+	if (y < 0)
+		return;
 	if (x % 32 == 0)
 		x = x / 32;
 	else
@@ -91,12 +103,15 @@ void room::usun(int x, int y)
 
 	if (x == xr - 1)
 		return;
+	if (x > xr-1)
+		return;
 
 	if (y % 32 == 0)
 		y = y / 32;
 	else
 		y = y / 32;
-
+	if (y > yr-1)
+		return;
 	if (y == yr - 1)
 		return;
 
