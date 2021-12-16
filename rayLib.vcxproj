@@ -147,13 +147,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Hero.cpp" />
-    <ClCompile Include="Level.cpp" />
     <ClCompile Include="rayLib.cpp" />
     <ClCompile Include="room.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hero.h" />
-    <ClInclude Include="Level.h" />
     <ClInclude Include="room.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

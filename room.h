@@ -1,6 +1,7 @@
 #pragma once
 #include "raylib.h"
-
+#include <stdlib.h>
+#include <time.h> 
 
 class room
 {
@@ -10,9 +11,11 @@ class room
 public:
 	room();
 
+	~room();
+
 	void draw();
 
-	bool colision(int x,int y);
+	char colision(int x,int y);
 
 	void nowe(int x,int y);
 
